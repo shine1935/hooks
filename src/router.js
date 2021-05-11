@@ -5,6 +5,8 @@ import React, { lazy } from 'react';
 const contextComponent = lazy(() => import('./basic/useContext'));
 const EffectComponent = lazy(() => import('./basic/useEffect'));
 const StateComponent = lazy(() => import('./basic/useState'));
+const StateComponentOrigin = lazy(() => import('./basic/useStateOrigin'));
+
 const MemoComponent = lazy(() => import('./extra/useMemo'));
 const ReducerComponent = lazy(() => import('./extra/useReducer'));
 const RefComponent = lazy(() => import('./extra/useRef'));
@@ -13,9 +15,14 @@ const CustomComponent = lazy(() => import('./extra/customHooks.js'));
 
 const CallBackComponent = lazy(() => import('./extra/useCallback.js'));
 
+const Home = lazy(()=>import('./home.jsx'))
 
-const routers = [
+
+const routes = [
   { path: "/useState",name: "useState",component: StateComponent},
+  { path: "/useStateOrigin",name: "useState",component: StateComponentOrigin},
+
+
   { path: "/useEffect",name: "useEffect", component: EffectComponent},
   { path: "/useContext", name: "useContext", component: contextComponent},
 
@@ -28,6 +35,8 @@ const routers = [
   { path: "/useReducer", name: "useReducer", component: ReducerComponent},
   { path: "/useCustomHooks", name: "useCustomHooks", component: CustomComponent},
 
+  { path: "/home",  name:"home",component: Home},
+
 ];
 
-export default routers;
+export default routes;

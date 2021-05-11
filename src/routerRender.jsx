@@ -9,6 +9,7 @@ import {
 import routes from './router';
 
 const renderRoutes = (routes) => {
+  console.log('routes',routes)
   if (!Array.isArray(routes)) {
     return null;
   }
