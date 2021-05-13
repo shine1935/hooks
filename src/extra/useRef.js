@@ -33,7 +33,6 @@ export const  UseRefSaveValue=()=> {
             <Button onClick={() => {
                 prev.current = counter;
                 setCounter(x => {
-                    console.log('x++',x)
                     return x+1;
                 });
             }}>
@@ -43,7 +42,6 @@ export const  UseRefSaveValue=()=> {
             <Button onClick={() => {
                 prev.current = counter;
                 setCounter(x => {
-                    console.log('x--',x);
                     return x-1
                 });
             }}>

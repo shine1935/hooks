@@ -22,7 +22,6 @@ export default function AppContext() {
             theme,
             toggle: () => {
                 setTheme(theme => {
-                    console.log('theme', theme)
                     setTheme(theme === themes.light ? themes.dark : themes.light)
                 })
             }

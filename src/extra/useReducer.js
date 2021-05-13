@@ -16,7 +16,6 @@ import React, { useReducer } from 'react'
 import { Button } from 'antd'
 
 function reducer(state, action) {
-    console.log(state, action)
     switch(action.type){
         case "add":
             return state+1;

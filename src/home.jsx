@@ -12,10 +12,12 @@ export default class home extends Component {
                     <div style={{display:'flex',justifyContent:'space-around',flexDirection:'column'}}>
                         <Link to='/useState'>useState</Link>
                         <Link to='/useStateOrigin'>useStateOrigin</Link>
+                        <br/>
 
                         <Link to='/useEffect'>useEffect</Link>
                         <Link to='/useEffectOrigin'>useEffectOrigin</Link>
-
+                        <br/>
+                        
                         <Link to='/useContext'>useContext</Link>
                         <Link to='/useContextOrigin'>useContextOrigin</Link>
                     </div>
@@ -27,8 +29,10 @@ export default class home extends Component {
                     </div>
                     <div style={{display:'flex',justifyContent:'space-around',flexDirection:'column'}}>
                         <Link to='/useMemo'>useMemo</Link>
-                        <Link to='/useCallBack'>useCallBack</Link>
+                        <Link to='/useMemoOrigin'>useMemoOrigin</Link>
+                        <br/>
 
+                        <Link to='/useCallBack'>useCallBack</Link>
                         <Link to='/useRef'>useRef</Link>
                         <Link to='/useCustomHooks'>useCustomHooks</Link>
                     </div>
