@@ -24,7 +24,7 @@ function Child({data}) {
     )
 }
 
-Child = memo(Child)
+Child = memo(Child)// 查memo的api和用法
 
 export default function App(){
     const [count, setCount] = useState(0);

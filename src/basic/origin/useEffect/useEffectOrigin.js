@@ -31,6 +31,10 @@ export default function App() {
 }
 
 
+// useEffect如何批量更新 ？是同步更新还是异步更新？如果想批量更新，怎么操作？
+
+//() => setNumber(number+1)和setNumber和setNumber()的区别
+
 
 /**
  * 

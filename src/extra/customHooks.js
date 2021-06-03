@@ -22,10 +22,10 @@ async function getPerson() {
 //然后使用状态
 function usePerson() {
     const [list, setList] = useState(null);
-    //发送请求是个作用，也就是effect(因为没有办法体现在界面上，所以理解为一个作用)
+    //发送请求是个作用，也就是effect
     async function request() {
         const listResponse = await getPerson()
-        setList(listResponse)//list 不要依赖现有的list????
+        setList(listResponse)//list 
     }
     useEffect(request, []);
     return list

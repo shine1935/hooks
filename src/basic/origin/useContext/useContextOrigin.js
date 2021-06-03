@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+//子组件是如何取值（如何使用这个值的）的？
 
 let AppContext = React.createContext()
 function useContext(context){

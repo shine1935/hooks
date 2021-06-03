@@ -12,6 +12,9 @@
 
 
 //深拷贝和浅拷贝(缓存策略？？？)
+
+
+// 浅比较 props（答案：https://github.com/Vibing/blog/issues/29）
 //tips:可以使用useMemo减少重绘次数
 import React, { useMemo, useState } from 'react'
 
@@ -33,9 +36,6 @@ export default function useMemoExample() {
 }
 
 
-// useMemo(()=>{
-    
-// })
 
 
 
